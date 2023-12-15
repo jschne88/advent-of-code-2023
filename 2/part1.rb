@@ -20,7 +20,6 @@ total = lines.reduce(0) do |sum, line|
     set.split(", ").each do |pull|
       amount, color = pull.split(" ")
       if bag_contents[color.to_sym] < amount.to_i
-        # binding.pry
         is_possible = false
       end
     end
