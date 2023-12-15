@@ -1,6 +1,3 @@
-require "pry"
-require "pry-byebug"
-
 file = File.open(ARGV[0])
 lines = file.readlines(chomp: true).map { |line| line }
 
